@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-fc-Y2t" userLabel="Bill Amount">
+                                <rect key="frame" x="80" y="140" width="87" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uju-2a-6fE">
+                                <rect key="frame" x="80" y="194" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-yJ-nDr">
+                                <rect key="frame" x="80" y="240" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jms-cv-uCI" userLabel="TipAmountField">
+                                <rect key="frame" x="289" y="190" width="271" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMJ-Vk-173" userLabel="TotalAmountField">
+                                <rect key="frame" x="289" y="236" width="271" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5i-zn-M4J" userLabel="CalcTipButton">
+                                <rect key="frame" x="80" y="286" width="85" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="CalculateTip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p0r-am-PT1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7f-iI-cUC">
+                                <rect key="frame" x="289" y="140" width="271" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjx-4Y-0rK" userLabel="Select Amount">
+                                <rect key="frame" x="378" y="291" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Enter Tip Amt">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwX-yx-cmX"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-kE-JOx">
+                                <rect key="frame" x="78" y="342" width="444" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="sUE-Tk-GJF"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzt-Ha-otp">
+                                <rect key="frame" x="100" y="402" width="380" height="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bzt-Ha-otp" firstAttribute="top" secondItem="e5f-kE-JOx" secondAttribute="bottom" constant="30" id="3tz-m2-Fm7"/>
+                            <constraint firstItem="iMJ-Vk-173" firstAttribute="leading" secondItem="jms-cv-uCI" secondAttribute="leading" id="4o6-Dd-Dgh"/>
+                            <constraint firstItem="e5f-kE-JOx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8MB-ZR-rBp"/>
+                            <constraint firstItem="OQ4-yJ-nDr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="8pd-rj-4zS"/>
+                            <constraint firstItem="jms-cv-uCI" firstAttribute="width" secondItem="D7f-iI-cUC" secondAttribute="width" id="97h-ar-DA0"/>
+                            <constraint firstItem="hjx-4Y-0rK" firstAttribute="top" secondItem="iMJ-Vk-173" secondAttribute="bottom" constant="25" id="Aww-Zp-LKs"/>
+                            <constraint firstItem="e5f-kE-JOx" firstAttribute="top" secondItem="s5i-zn-M4J" secondAttribute="bottom" constant="16" id="HSn-nc-uTL"/>
+                            <constraint firstItem="s5i-zn-M4J" firstAttribute="top" secondItem="OQ4-yJ-nDr" secondAttribute="bottom" constant="25" id="I3g-hn-VwZ"/>
+                            <constraint firstItem="iMJ-Vk-173" firstAttribute="centerY" secondItem="OQ4-yJ-nDr" secondAttribute="centerY" id="JtA-qB-LU6"/>
+                            <constraint firstItem="Bzt-Ha-otp" firstAttribute="leading" secondItem="e5f-kE-JOx" secondAttribute="leading" constant="20" id="KTT-6H-Oww"/>
+                            <constraint firstItem="iMJ-Vk-173" firstAttribute="width" secondItem="jms-cv-uCI" secondAttribute="width" id="Ki7-1A-RKT"/>
+                            <constraint firstItem="jms-cv-uCI" firstAttribute="leading" secondItem="uju-2a-6fE" secondAttribute="trailing" constant="80" id="LYW-y5-sLZ"/>
+                            <constraint firstItem="iMJ-Vk-173" firstAttribute="leading" secondItem="OQ4-yJ-nDr" secondAttribute="trailing" constant="80" id="MeA-Ld-wPg"/>
+                            <constraint firstItem="wOI-fc-Y2t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="RZS-nt-Yw3"/>
+                            <constraint firstItem="wOI-fc-Y2t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="Rfs-dJ-uhD"/>
+                            <constraint firstItem="uju-2a-6fE" firstAttribute="top" secondItem="wOI-fc-Y2t" secondAttribute="bottom" constant="25" id="T4Y-Ro-s8p"/>
+                            <constraint firstItem="D7f-iI-cUC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="VYz-aL-hzs"/>
+                            <constraint firstItem="D7f-iI-cUC" firstAttribute="leading" secondItem="wOI-fc-Y2t" secondAttribute="trailing" constant="80" id="WOe-6O-urW"/>
+                            <constraint firstItem="e5f-kE-JOx" firstAttribute="leading" secondItem="s5i-zn-M4J" secondAttribute="leading" id="XOq-st-QG3"/>
+                            <constraint firstItem="OQ4-yJ-nDr" firstAttribute="top" secondItem="uju-2a-6fE" secondAttribute="bottom" constant="25" id="ahy-nK-5oF"/>
+                            <constraint firstItem="hjx-4Y-0rK" firstAttribute="centerX" secondItem="iMJ-Vk-173" secondAttribute="centerX" id="bTq-F3-PKX"/>
+                            <constraint firstItem="Bzt-Ha-otp" firstAttribute="centerX" secondItem="e5f-kE-JOx" secondAttribute="centerX" id="beZ-RJ-23j"/>
+                            <constraint firstItem="jms-cv-uCI" firstAttribute="leading" secondItem="D7f-iI-cUC" secondAttribute="leading" id="cBv-xJ-mda"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D7f-iI-cUC" secondAttribute="trailing" constant="20" id="jFq-al-Tay"/>
+                            <constraint firstItem="e5f-kE-JOx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="maC-Qo-Hzo"/>
+                            <constraint firstItem="s5i-zn-M4J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="o2s-IK-ijd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bzt-Ha-otp" secondAttribute="trailing" constant="231" id="pbL-qL-fed"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bzt-Ha-otp" secondAttribute="trailing" constant="100" id="pyO-9n-0Ys"/>
+                            <constraint firstItem="jms-cv-uCI" firstAttribute="centerY" secondItem="uju-2a-6fE" secondAttribute="centerY" id="rCa-Lk-ESS"/>
+                            <constraint firstItem="D7f-iI-cUC" firstAttribute="centerY" secondItem="wOI-fc-Y2t" secondAttribute="centerY" id="sSr-zm-tro"/>
+                            <constraint firstItem="hjx-4Y-0rK" firstAttribute="centerY" secondItem="s5i-zn-M4J" secondAttribute="centerY" id="vba-jM-9Ks"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bzt-Ha-otp" secondAttribute="trailing" constant="231" id="xRG-wK-nDb"/>
+                            <constraint firstItem="uju-2a-6fE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="yWB-xh-nsL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WOe-6O-urW"/>
+                                <exclude reference="maC-Qo-Hzo"/>
+                                <exclude reference="pbL-qL-fed"/>
+                                <exclude reference="xRG-wK-nDb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="billAmount" destination="D7f-iI-cUC" id="fcB-hA-GFh"/>
+                        <outlet property="pressCalc" destination="s5i-zn-M4J" id="oay-WF-qto"/>
+                        <outlet property="selectTip" destination="hjx-4Y-0rK" id="1D2-kp-dJX"/>
+                        <outlet property="slider" destination="e5f-kE-JOx" id="Qn0-Wy-msO"/>
+                        <outlet property="tipAmount" destination="jms-cv-uCI" id="P0B-8I-ZVe"/>
+                        <outlet property="tipValue" destination="Bzt-Ha-otp" id="Nl9-5a-0DS"/>
+                        <outlet property="totalAmount" destination="iMJ-Vk-173" id="Oyr-5l-1eE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="309"/>
+        </scene>
+    </scenes>
+</document>
